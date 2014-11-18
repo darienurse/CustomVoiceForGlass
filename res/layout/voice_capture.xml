@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/body"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignTop="@+id/imageView"
+        android:alpha="1"
+        android:cropToPadding="false"
+        android:src="@drawable/pulse_circle_filled"
+        android:tint="#34a7ff"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
+        android:layout_below="@+id/prompt_field"
+        android:layout_centerHorizontal="true"
+        android:baselineAlignBottom="true"
+        android:contentDescription="augmate logo"
+        android:src="@drawable/augmate_logo_solid"/>
+
+    <TextView
+        android:id="@+id/prompt_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingEnd="@dimen/text_padding"
+        android:paddingStart="@dimen/text_padding"
+        android:phoneNumber="false"
+        android:singleLine="true"
+        android:text="Ready"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffffff"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/results_field"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingLeft="5dp"
+        android:phoneNumber="false"
+        android:singleLine="false"
+        android:text="Tap or nod to begin speaking"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/prompt_field"
+        android:layout_toLeftOf="@+id/prompt_field"
+        android:scaleType="fitEnd"
+        android:src="@drawable/error_icon"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
